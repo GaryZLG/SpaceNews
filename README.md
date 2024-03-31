@@ -21,25 +21,28 @@ Ensure you have Node.js and npm installed on your system. You can download them 
 1. Clone the repository:
    ```bash
    git clone https://github.com/GaryZLG/SpaceNews.git
+   ```
 2. Navigate into the project directory:
    ```bash
    cd your-xxx-repository
+   ```
 3. Make sure you have install the dependencies:
    ```bash
    npm install axios dayjs ejs express nodemon
-
+   ```
 ### Running the Application
 To start the application, run:
-    ```bash
-    npm run serve
-
+   ```bash
+   npm run serve
+   ```
 This will start the server on `localhost:3000` by default. Open your browser and navigate to `http://localhost:3000` to view the application.
 
 ### Running Tests
 
 To run the test suite, execute the following command:
-    ```bash
-    npm test
+   ```bash
+   npm test
+   ```
 
 ## Technologies Used
 
