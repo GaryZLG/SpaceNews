@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="description" content="Description" />
+        <meta name="keywords" content="Keywords" />
+        <meta name="author" content="author name" />
+
+        <title>DETAIL</title>
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:400,700"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+
+        <link rel="stylesheet" href="../css/aos.css" />
+
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="navigation">
+                <nav class="navbar navbar-expand-lg">
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://localhost:3000"
+                                    >Home</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="main section-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-sm-10 mx-auto">
+                        <div class="theiaStickySidebar">
+                            <div class="main__post">
+                                <h1 class="heading-primary mb-5">
+                                    <%= detail.title %>
+                                </h1>
+
+                                <div class="main__content mb-5">
+                                    <img
+                                        src="<%= detail.image_url %>"
+                                        alt="header main image one"
+                                        class="main__image"
+                                    />
+                                </div>
+                                <p class="paragraph"><%= detail.summary %></p>
+                                <section class="main-banner">
+                                    <div class="main-banner__content">
+                                        <h1 class="heading-secondary">
+                                            Climate change is not a theoretical
+                                            question for the people of the
+                                            Caribbean.
+                                        </h1>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-10 mx-auto sidebar">
+                        <div class="theiaStickySidebar">
+                            <aside class="main__sidebar">
+                                <div class="main__search">
+                                    <form class="search-form">
+                                        <input
+                                            type="search"
+                                            placeholder="What do you want to Search?"
+                                        />
+                                        <button
+                                            class="btn btn-search"
+                                            type="submit"
+                                        >
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="main_news_sites">
+                                    <h3 class="heading-tertiary">News Sites</h3>
+                                    <hr />
+                                    <ul class="main_news_sites--list"></ul>
+                                    <div class="main_news_sites--page"></div>
+                                </div>
+                                <div class="main__blog">
+                                    <h3 class="heading-tertiary">
+                                        Blog
+                                        <a
+                                            href="javaScript:void(0);"
+                                            class="main__blog--refresh"
+                                            >(Refresh)</a
+                                        >
+                                    </h3>
+                                    <hr class="style-main-thin" />
+                                    <div class="main__blog--list"></div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="../js/jquery.min.js"></script>
+
+        <script src="../js/popper.min.js"></script>
+
+        <script src="../js/bootstrap.min.js"></script>
+
+        <script src="../js/ResizeSensor.min.js"></script>
+        <script src="../js/theia-sticky-sidebar.min.js"></script>
+
+        <script src="../js/aos.js"></script>
+
+        <script src="../js/detail.js"></script>
+    </body>
+</html>
