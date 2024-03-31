@@ -1,9 +1,12 @@
 
+
+// Pagination constructor function
 function Pagination(obj, fn) {
     this.fn = fn;
     this.init(obj);
 }
 
+// Prototypical inheritance for Pagination
 Pagination.prototype = {
     pages: {
         pageCount: 0, // Total pages

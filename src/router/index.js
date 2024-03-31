@@ -1,12 +1,21 @@
+/* 
+ Use the express.Router class to create modular, mountable route handlers.
+*/
+
+
+// Require necessary NPM modules
 const express = require("express");
 const axios = require("axios");
 const dayjs = require("dayjs");
 const router = express.Router();
 
+// Route for the home page
 router.get("/", async (req, res) => {
     res.render("index.ejs");
 });
 
+// Routes to handle "detail" pages for blogs, reports, and articles
+// These routes fetch data from an API and pass it to the EJS template for rendering
 router.get("/blog/detail", async (req, res) => {
     try {
         const id = req.query.id;
@@ -76,6 +85,7 @@ router.get("/articles/detail", async (req, res) => {
     }
 });
 
+// Route to get and return news site data
 router.get("/news_site", async (req, res) => {
     try {
         const result = await axios(
@@ -103,6 +113,7 @@ router.get("/news_site", async (req, res) => {
     }
 });
 
+// Routes for listing blogs, articles, and reports with pagination
 router.get("/blog", async (req, res) => {
     try {
         const { pageNum = 1, pageSize = 10 } = req.query;
@@ -217,8 +228,10 @@ router.get("/reports", async (req, res) => {
     }
 });
 
+// Catch-all route for undefined routes, rendering a 404 page
 router.all("*", (req, res) => {
     res.render("404.ejs");
 });
 
+// Export the router for use in the main app
 module.exports = router;

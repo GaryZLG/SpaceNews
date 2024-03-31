@@ -1,4 +1,92 @@
-.tag-wrap{display:inline-block}.tag-wrap .nav-tabs.card-header-tabs{margin-right:unset;margin-bottom:unset;margin-left:unset;border-bottom:unset}.tag-wrap .nav-link2{padding:.125rem .375rem}.tag-wrap .dropdown-menu{width:480px}.tag-wrap .dropdown-menu [id^=tag-tab-]{padding:.125rem .375rem;border-radius:.1875rem}.tag-wrap .dropdown-menu .nav-tabs a{color:#6c757d}.tag-wrap .dropdown-menu .nav-tabs .nav-link.active{background-color:#6c757d;color:#fff}.tag-wrap .dropdown-menu .nav-tabs .nav-link:focus,.tag-wrap .dropdown-menu .nav-tabs .nav-link:hover{border-color:transparent}.tag-wrap .dropdown-toggle:after{display:none}.tag-wrap .dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.tag-wrap .tab-content{margin:.5rem 0!important}.tag-wrap .tag-input.warning{animation:tag-input-warning 2s}.tag-wrap #tagSearchResult .dropdown-item.active{color:#212529;text-decoration:none;background-color:#f8f9fa!important}.tag-wrap #tagSearchResult .dropdown-item:hover{color:#212529;text-decoration:none;background-color:#eff1f3!important}@keyframes tag-input-warning{0%{background-color:#ffc107;border-color:#ffc107}to{background-color:#f8f9fa}}
+/* This file is to control status code 404 page css */
+
+.tag-wrap{
+    display:inline-block
+}
+.tag-wrap 
+.nav-tabs.card-header-tabs{
+    margin-right:unset;
+    margin-bottom:unset;
+    margin-left:unset;
+    border-bottom:unset
+}
+.tag-wrap 
+.nav-link2{
+    padding:.125rem .375rem
+}
+.tag-wrap 
+.dropdown-menu{
+    width:480px
+}
+.tag-wrap 
+.dropdown-menu [id^=tag-tab-]{
+    padding:.125rem .375rem;
+    border-radius:.1875rem
+}
+.tag-wrap 
+.dropdown-menu 
+.nav-tabs a{
+    color:#6c757d
+}
+.tag-wrap 
+.dropdown-menu 
+.nav-tabs 
+.nav-link.active{
+    background-color:#6c757d;
+    color:#fff
+}
+.tag-wrap 
+.dropdown-menu 
+.nav-tabs 
+.nav-link:focus,.tag-wrap 
+.dropdown-menu 
+.nav-tabs 
+.nav-link:hover{
+    border-color:transparent
+}
+.tag-wrap 
+.dropdown-toggle:after{
+    display:none
+}
+.tag-wrap 
+.dropdown-item{
+    display:block;
+    width:100%;
+    padding:.25rem 1.5rem;
+    clear:both;
+    font-weight:400;
+    color:#212529;
+    text-align:inherit;
+    white-space:nowrap;
+    background-color:transparent;
+    border:0
+}
+.tag-wrap 
+.tab-content{
+    margin:.5rem 0!important
+}
+.tag-wrap 
+.tag-input.warning{
+    animation:tag-input-warning 2s
+}
+.tag-wrap #tagSearchResult 
+.dropdown-item.active{
+    color:#212529;
+    text-decoration:none;
+    background-color:#f8f9fa!important
+}
+.tag-wrap #tagSearchResult 
+.dropdown-item:hover{
+    color:#212529;
+    text-decoration:none;
+    background-color:#eff1f3!important
+}
+@keyframes tag-input-warning{
+    0%{background-color:#ffc107;
+        border-color:#ffc107
+    }to{
+        background-color:#f8f9fa
+    }}
 
 /*!
  * Font Awesome Pro 5.15.3 by @fontawesome - https://fontawesome.com
