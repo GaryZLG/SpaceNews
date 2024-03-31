@@ -20,4 +20,8 @@ app.use(express.urlencoded({ extends: false }));
 
 app.use(router);
 
+app.use((req, res) => {
+  res.status(404).render('404.ejs');
+});
+
 module.exports = app;

@@ -20,7 +20,7 @@ router.get("/blog/detail", async (req, res) => {
     try {
         const id = req.query.id;
         if (!id) {
-            res.render("404.ejs");
+            res.status(404).render("404.ejs");
             return;
         }
         const result = await axios(
@@ -31,10 +31,10 @@ router.get("/blog/detail", async (req, res) => {
             res.render("detail.ejs", { detail: data });
             return;
         }
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     } catch (error) {
         console.error(error);
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     }
 });
 
@@ -42,7 +42,7 @@ router.get("/reports/detail", async (req, res) => {
     try {
         const id = req.query.id;
         if (!id) {
-            res.render("404.ejs");
+            res.status(404).render("404.ejs");
             return;
         }
 
@@ -55,10 +55,10 @@ router.get("/reports/detail", async (req, res) => {
             res.render("detail.ejs", { detail: data });
             return;
         }
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     } catch (error) {
         console.error(error);
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     }
 });
 
@@ -66,7 +66,7 @@ router.get("/articles/detail", async (req, res) => {
     try {
         const id = req.query.id;
         if (!id) {
-            res.render("404.ejs");
+            res.status(404).render("404.ejs");
             return;
         }
         const result = await axios(
@@ -78,10 +78,10 @@ router.get("/articles/detail", async (req, res) => {
             res.render("detail.ejs", { detail: data });
             return;
         }
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     } catch (error) {
         console.error(error);
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     }
 });
 
@@ -148,7 +148,7 @@ router.get("/blog", async (req, res) => {
         });
     } catch (error) {
         console.error(error);
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     }
 });
 
@@ -224,7 +224,7 @@ router.get("/reports", async (req, res) => {
         });
     } catch (error) {
         console.error(error);
-        res.render("500.ejs");
+        res.status(500).render("500.ejs");
     }
 });
 

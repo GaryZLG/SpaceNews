@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "npx nodemon app.js"
+    "serve": "npx nodemon app.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,9 @@
     "ejs": "^3.1.9",
     "express": "^4.19.2",
     "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
   }
 }
