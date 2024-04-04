@@ -24,7 +24,7 @@ Ensure you have Node.js and npm installed on your system. You can download them 
    ```
 2. Navigate into the project directory:
    ```bash
-   cd your-xxx-repository
+   cd SpaceNews
    ```
 3. Make sure you have install the dependencies:
    ```bash
